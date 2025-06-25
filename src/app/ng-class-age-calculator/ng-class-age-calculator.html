@@ -1,0 +1,8 @@
+<p>ng-class-age-calculator works!</p>
+<input type="text" #Myage (input)="takeinput(Myage.value)">
+<h2 [ngClass]="{'Vote':CheckAge(),'NotVote':!CheckAge()}">{{result}}</h2>
+
+<!-- if and else both can use as it  -->
+
+<!-- <input type="text" #Myage (input)="takeinput(Myage.value)">
+<h2 [ngClass]="CheckAge() ? 'Vote' : 'NotVote'">{{ result }}</h2> -->

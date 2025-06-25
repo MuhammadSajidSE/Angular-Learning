@@ -1,0 +1,13 @@
+<div>
+    <h2>Enter your birth year</h2>
+    <input type="text" #inputyear (input)="startfunction(inputyear.value)">
+    <button (click)="checkyear(inputyear.value)">Check</button>
+    <h2 *ngIf = "result; else elseconditon">
+        You can Vote
+    </h2>
+    <ng-template #elseconditon>
+        <h2 *ngIf="start">
+            You can not Vote
+        </h2>
+    </ng-template>
+</div>

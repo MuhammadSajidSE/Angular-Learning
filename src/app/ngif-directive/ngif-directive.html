@@ -1,0 +1,8 @@
+<div [ngClass]="'boxCenter'">
+<h2 [ngClass]="'heading'">
+    Enter the Six Digit Code
+</h2>
+<input #inputpin type="text" (input)="countvalue(inputpin.value)" [disabled]="disable" >
+<p>Need {{count}} digit more then click</p>
+<button [ngClass]="'buttonstyle'" *ngIf ="!disable" >Done Pin</button>
+</div>

@@ -1,0 +1,32 @@
+.MainBox {
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+    background-color: antiquewhite;
+    height: 200px;
+    padding-left: 15%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10%;
+    padding-top: 1%;
+}
+
+.CountButton {
+    height: 50px;
+    width: 100px;
+    border: 1px solid black;
+    color: azure;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: brown;
+}
+.heading{
+    display:block;
+}
+
+.button-row{
+display: flex;
+flex-direction: row;
+gap: 10px;
+padding-right: 20px;
+}

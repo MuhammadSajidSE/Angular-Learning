@@ -1,0 +1,44 @@
+<div ngClass="box">
+    <h2>
+        Generate you Result
+    </h2>
+    <input type="text" placeholder="Enter English Marks" #englishnumber>
+    <input type="text" placeholder="Enter Urdu Marks" #urdunumber>
+    <input type="text" placeholder="Enter Math Marks" #mathnumber>
+    <button (click)="GenerateResult(englishnumber.value,urdunumber.value,mathnumber.value)">
+        Gnerate result
+    </button>
+    <div [ngSwitch]="grade">
+    <h5 *ngSwitchCase = "'A+'" [ngClass]="'aplus'">
+        The Percentage is {{result}}% and grade is A+
+    </h5>
+
+    <h5 *ngSwitchCase = "'A'" [ngClass]="'a'">
+        The Percentage is {{result}}% and grade is A
+    </h5>
+
+    <h5 *ngSwitchCase = "'B'" [ngClass]="'b'">
+        The Percentage is {{result}}% and grade is B
+    </h5>
+
+    <h5 *ngSwitchCase = "'C'" [ngClass]="'c'">
+        The Percentage is {{result}}% and grade is C
+    </h5>
+
+    <h5 *ngSwitchCase = "'D'" [ngClass]="'d'">
+        The Percentage is {{result}}% and grade is D
+    </h5>
+
+    <h5 *ngSwitchCase = "'E'" [ngClass]="'e'">
+        The Percentage is {{result}}% and grade is E
+    </h5>
+
+    <h5 *ngSwitchCase = "'F'" [ngClass]="'f'">
+        The Percentage is {{result}}% and grade is F
+    </h5>
+
+    <h5 *ngSwitchDefault>
+        Please Enter the marks proper
+    </h5>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<div [ngClass]="'MainBox'">
+    <h2 [ngClass]="'heading'">Counter App</h2>
+    <div [ngClass]="'button-row'">
+        <button [ngClass]="'CountButton'" (click)="increment()">+</button>
+        <h3>{{count}}</h3>
+        <button [ngClass]="'CountButton'" (click)="decrement()">-</button>
+    </div>
+</div>

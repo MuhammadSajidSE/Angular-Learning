@@ -1,0 +1,13 @@
+<div [ngClass]="['LoginBox']">
+    <dir></dir>
+<h2 style="text-align: center; font-size: 30px;">Login Page</h2>
+<div style="margin-left: 23%; margin-top: 10%;">
+    <input #email type="text" placeholder="Enter Email" style="width: 250px; height: 25px;">
+<dir></dir>
+    <input #password type="text" placeholder="Enter Password" style="width: 250px; height: 25px;">
+</div>
+<button [ngClass]="['ButtonClass']" (click)="Login(email.value,password.value)">Login</button>
+<h3 style="margin-left: 32%;" [ngClass]="notification() ? 'loginYes' : 'loginNo'">{{result}}</h3>
+<button (click)="clear(email,password)" [ngClass]="['ButtonClass']" >Clear</button>
+
+</div>

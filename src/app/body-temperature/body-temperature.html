@@ -1,0 +1,6 @@
+<h1 style="background-color: bisque; text-align: center;">Check your Body Temperateure Here</h1>
+<div style=" padding-left: 50%;">
+    <input type="text" #Myinput (input)="GetTemp(Myinput.value)">
+    <h2 [className]="b">{{temp}}</h2>
+    <h2 [className]="b">{{result}}</h2>
+</div>

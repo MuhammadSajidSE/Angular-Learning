@@ -1,0 +1,6 @@
+<p>property-binding works!</p>
+<input type="text" value="Muhammad Sajid" [disabled]="toggle">
+<button (click)="toggleAction()">Toggle</button>
+<button (click)="counting()">{{count}}</button>
+<h2>{{name}}</h2>
+<input #myInput (input)="updatevalue(myInput.value)" [disabled]="inputtoggle">
